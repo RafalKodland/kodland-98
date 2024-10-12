@@ -1,10 +1,10 @@
 import random
 
-znaki = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-dlugosc = int(input("Jaka ma być długość hasła: "))
-haslo = ""
+def gen_pass(pass_lenght):
+    znaki = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    haslo = ""
 
-for i in range(dlugosc):
-    haslo += random.choice(znaki)
+    for i in range(pass_lenght):
+        haslo += random.choice(znaki)
 
-print("Twoje hasło to:", haslo)
+    return haslo
